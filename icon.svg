@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="108" fill="#0d1117"/>
+  <rect x="24" y="24" width="464" height="464" rx="90" fill="none" stroke="#30363d" stroke-width="8"/>
+  <!-- Stylized Celtic Harp & Lever -->
+  <path d="M165 415 L165 110 C165 92 185 88 205 102 C255 136 300 138 355 112 C372 104 385 118 375 138 L220 415 Z" fill="none" stroke="#f59e0b" stroke-width="18" stroke-linejoin="round"/>
+  <!-- Strings: C (Red), D, E, F (Blue), G -->
+  <line x1="205" y1="132" x2="205" y2="395" stroke="#ef4444" stroke-width="8" stroke-linecap="round"/>
+  <line x1="238" y1="142" x2="238" y2="365" stroke="#e2e8f0" stroke-width="7" stroke-linecap="round"/>
+  <line x1="271" y1="145" x2="271" y2="310" stroke="#e2e8f0" stroke-width="7" stroke-linecap="round"/>
+  <line x1="304" y1="140" x2="304" y2="255" stroke="#3b82f6" stroke-width="8" stroke-linecap="round"/>
+  <!-- Lever detail at top -->
+  <circle cx="205" cy="148" r="13" fill="#f59e0b"/>
+  <line x1="205" y1="148" x2="232" y2="124" stroke="#fbbf24" stroke-width="11" stroke-linecap="round"/>
+</svg>

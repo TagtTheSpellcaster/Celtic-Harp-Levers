@@ -1,0 +1,19 @@
+{
+  "name": "Celtic Harp Levers (E♭ Tuning)",
+  "short_name": "Harp Levers",
+  "description": "Visual lever chart for Celtic harp tuned in E-flat major / Mi bemolle maggiore.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0d1117",
+  "theme_color": "#0d1117",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
