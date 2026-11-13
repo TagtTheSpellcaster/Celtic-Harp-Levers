@@ -1,6 +1,6 @@
 # Celtic Harp Levers
 
-![Version](https://img.shields.io/badge/version-1.0.0-amber.svg)
+![Version](https://img.shields.io/badge/version-1.3.1-amber.svg)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![PWA](https://img.shields.io/badge/PWA-ready-success.svg)
 ![Offline](https://img.shields.io/badge/offline-supported-brightgreen.svg)
