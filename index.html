@@ -9,8 +9,9 @@
   <meta name="apple-mobile-web-app-title" content="Harp Levers" />
   <title>Celtic Harp Levers (E♭)</title>
   <link rel="manifest" href="./manifest.json" />
-  <link rel="icon" type="image/svg+xml" href="./icon.svg" />
-  <link rel="apple-touch-icon" href="./icon.svg" />
+  <link rel="icon" type="image/png" sizes="192x192" href="./icon-192.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="./icon-512.png" />
+  <link rel="apple-touch-icon" href="./icon-192.png" />
   <style>
     :root {
       --bg: #0d1117;
@@ -532,9 +533,6 @@
     }
 
     function renderStaffSVG(matchedKey) {
-      // Treble clef staff lines at y = 22, 30, 38, 46, 54
-      // Flat positions (Bb, Eb, Ab): y = 38, 26, 42
-      // Sharp positions (F#, C#, G#, D#): y = 22, 34, 18, 30
       const flatY = [38, 26, 42];
       const sharpY = [22, 34, 18, 30];
       let accidentalsSVG = '';
@@ -578,7 +576,6 @@
 
       const matchedKey = findMatchingKey();
 
-      // Render Key Cards
       const keysGrid = document.getElementById('keysGrid');
       keysGrid.innerHTML = KEYS.map((k, idx) => {
         const isActive = matchedKey === k;
@@ -593,7 +590,6 @@
         `;
       }).join('');
 
-      // Render Status Banner
       if (matchedKey) {
         document.getElementById('sigLabel').textContent = currentLang === 'en' ? matchedKey.enSig : matchedKey.itSig;
         document.getElementById('majorName').textContent = currentLang === 'en' ? matchedKey.enMaj : matchedKey.itMaj;
@@ -606,7 +602,6 @@
       }
       document.getElementById('staffBox').innerHTML = renderStaffSVG(matchedKey);
 
-      // Render 7 Strings & Levers
       const board = document.getElementById('harpBoard');
       board.innerHTML = STRINGS.map((s, idx) => {
         const isUp = levers[idx];
@@ -635,10 +630,8 @@
       }).join('');
     }
 
-    // Initialize UI
     setLang(currentLang);
 
-    // Register Service Worker for PWA
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
         navigator.serviceWorker.register('./sw.js').catch(() => {});
