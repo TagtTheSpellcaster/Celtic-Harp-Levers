@@ -1,4 +1,4 @@
-const CACHE_NAME = 'celtic-harp-levers-v2';
+const CACHE_NAME = 'celtic-harp-levers-v1.2';
 const ASSETS = [
   './',
   './index.html',
